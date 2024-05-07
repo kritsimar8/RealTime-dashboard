@@ -22,6 +22,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(cors());
 app.use("/kpi",kpiRoutes)
+app.use("/product", productRoutes)
 
 console.log("hello")
 
