@@ -37,7 +37,6 @@ const PORT = process.env.PORT ||9000;
 mongoose.connect("mongodb://127.0.0.1:27017")
 .then(async()=>{
     app.listen(PORT,()=>console.log(`Server Port: ${PORT}`))
-    
     // await mongoose.connection.db.dropDatabase();
     // KPI.insertMany(kpis)
     // Product.insertMany(products);
